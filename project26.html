@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yes's Gym</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        /* <!-- css reset --> */
+        body {
+            margin: 0;
+            padding: 0;
+            color: white;
+            background: url('gym.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 110%;
+
+        }
+
+        html {
+            background-position: 100px 5px;
+        }
+
+        .left {
+
+            display: inline-block;
+            position: absolute;
+            left: 55px;
+            top: 20px;
+        }
+
+        .left img {
+            width: 140px;
+            /* filter:invert(100%); convert image colour */
+            border-radius: 80px;
+        }
+
+        .left div {
+            line-height: 19px;
+            font-size: 20px;
+            text-align: center;
+            font-family: Papyrus;
+            position: relative;
+            top: 10px;
+        }
+
+        .center {
+
+            display: block;
+            width: 64%;
+            margin: 20px auto;
+        }
+
+        .right {
+
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 34px;
+        }
+
+        .btn {
+            margin: 0px 10px;
+            color: white;
+            background-color: black;
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 8px;
+            font-size: 20px;
+            cursor: pointer;
+            font-family: curseive;
+            position: relative;
+            bottom: 150px;
+        }
+
+        .btn:hover {
+            text-decoration: underline;
+            background-color: rgb(114, 113, 113);
+        }
+
+        .navbar {
+            display: inline-block
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 24px;
+            font-family: cursive;
+
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: grey;
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 170px 140px;
+            padding: 75px 75px;
+            width: 33%;
+            border-radius: 20px;
+            height: 480px;
+        }
+
+        .inp input {
+            border-radius: 20PX;
+            text-align: center;
+            display: block;
+            width: 450px;
+            font-size: 10px;
+            font-family: cursive;
+            border: 3px solid rgb(0, 0, 0);
+        }
+
+        h1 {
+            font-family: Papyrus;
+            text-align: center;
+            font-size: 50px;
+            position: relative;
+            bottom: 40px;
+        }
+
+        .container button {
+            display: block;
+            width: 74%;
+            position: relative;
+            top: 25px;
+            margin: 20px auto;
+        }
+
+        .btn1 {
+            display: block;
+            border-radius: 10px;
+
+        }
+        .navbar2{
+            display: inline-block;
+        }
+        .navbar2 img{
+            width:40px;
+            padding:40px;
+        }
+        .navbar2 li {
+            display: inline-block;
+            position:relative;
+            top: 980px;
+            left: 120px;
+        }
+        .navbar3 img{
+            width:40px;
+            padding:40px;
+            filter:invert(100%);
+        }
+        .navbar3 li{
+            display: inline-block;
+            position:relative;
+            right: 150px;
+            bottom: 60px;
+        }
+         
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- for logo -->
+            <img src="d.jpg" alt="" id="im">
+            <div>
+                Aryan Fitness
+            </div>
+
+        </div>
+
+        <div class="center">
+            <!-- for navbar -->
+            <ul class="navbar">
+                <li><a href="#" class="active">HOME</a></li>
+                <li><a href="#">FITNESS</a></li>
+                <li><a href="#">STORE</a></li>
+                <li><a href="#">ABOUT US</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <!-- for serarch -->
+            <ul class="navbar3">
+                <li><img src="tech-support.png" alt="">
+                </li>
+            </ul>
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Aryan Fitness</h1>
+        <h2>
+            <center>JOIN THE BEST GYM OF DELHI</center>
+        </h2>
+        <form action="">
+            <div class="inp">
+                NAME: <input type="text" class="text" placeholder="Enter Your Name">
+            </div>
+            <div class="inp">
+                CITY: <input type="text" class="text" placeholder="Enter Your City">
+               </div> 
+            <div class="inp">
+                AGE: <input type="Number" class="Number" placeholder="Enter Your Age">
+            </div>
+            <div class="inp">
+                ADDRESS: <input type="text" class="text" placeholder="Enter Your Address">
+            </div>
+            <div class="inp">
+                MOBILE NO. <input type="Number" class="Number" placeholder="Enter Your Number">
+            </div>
+            <div class="inp">
+                Email <input type=" Email" class="mail" placeholder="Enter Your Email">
+            </div>
+            <div>
+            <button class="btn">SUBMIT</button>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <h3>&nbsp;&nbsp;&nbsp;&nbsp;Follow us on :</h3>
+        <div class="left">
+            <!-- for navbar -->
+            <ul class="navbar2">
+                <li><a href="https://www.instagram.com/"><img src="instagram.png" alt=""></a>
+                <div class="new">
+                      Instagram:
+                </div></li>  
+                <li><a href="https://www.facebook.com/"><img src="facebook.png" alt=""></a>
+                    <div class="new">
+                        Facebook:
+                    </div></li>
+                <li><a href="https://www.youtube.com/"><img src="youtube.png" alt=""></a>
+                    <div class="new">
+                        Youtube:
+                    </div></li>
+                <li><a href="https://www.Twitter.com/"><img src="twitter.png" alt=""></a>
+                    <div class="new">
+                        Twitter:
+                    </div></li>
+
+                
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
