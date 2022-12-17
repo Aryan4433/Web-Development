@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom navigation</title>
+</head>
+<body>
+    <div id ="main" class="container">
+        <ul id ="nav">
+            <li>home</li>
+            <li>about</li>
+            <li>services</li>
+            <li>help</li>
+            <li>contact us</li>
+        </ul>
+    </div>
+    <div class="container">
+        containerssssss
+    </div>
+    <script>
+        // navigate the dom....
+        let main = document.getElementById('main')
+        console.log(main);
+        let nav= document.getElementById('nav')
+        console.log(nav);
+
+        // nav ke andr ki html print krega
+        // console.log(nav.innerHTML);
+
+
+        let container= document.getElementsByClassName('container')
+        console.log(container)
+
+        let sel = document.querySelector('.container')
+        console.log("Selector return 1st class match",sel)
+
+
+
+    </script>
+</body>
+</html>
