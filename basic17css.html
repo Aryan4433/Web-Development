@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <style>
+        .container{
+            border:2px solid black;
+            background-color: beige;
+            height:3400px;
+        }
+        /*css position; static (default) , relative,absolute,  fixed, stickly*/
+        .box{
+
+            display:inline-block;/*for take element inline*/
+            border:2px solid red;
+            width:150px;
+            height:150px;
+            margin:2px;
+            
+        }
+        #box3{
+            /* relative to nornmal position */
+            /* position:relative;
+            top:30px;
+            left:30px; */
+
+            /* relative to parrent  goto start*/
+            /* position:absolute;
+            top:30px;
+            left:30px; */
+
+            /* fixed at any position */
+        /* position: fixed;
+        right:4px;
+        bottom: 2px; */
+
+        /* sticly stick element at browser with scrolbar */
+        position: sticky;
+        top:3px;
+     
+
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+     <div class="box" id="box1">1</div>
+     <div class="box" id="box2">2</div>
+     <div class="box" id="box3">CHAT WITH US.</div>
+     <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>
