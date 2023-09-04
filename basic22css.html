@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font size units:em,rem,vh and vw units</title>
+    <style>
+        html{
+            font-size: 25px;;
+        }
+        .container{
+            font-size: 10px;
+
+            border:2px solid black;
+
+            /* width:400px; */
+            /* it can take full width */
+            width:100vw;
+            
+            /* height:300px; */
+            /* it can take full height */
+            height:100vh;
+
+        }
+        h1{
+            text-align: center;
+        }
+        #first{
+            /* em can be 10 time of parent  */
+            /* font-size: 3em; */
+            /* now padding take 3 guna of fontsize */
+            /* padding:3em; */
+        }
+        #second{
+            /* it relate the root element (html)  */
+            /* font-size: 3rem; */
+
+            /* padding:3rem; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">This is first heading</h1>
+        <h1 id ="second">This is second heading</h1>
+        <h1 id="third">This is third heading</h1>
+
+    </div>
+</body>
+</html>
