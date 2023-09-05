@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MORE ON SELECTORS</title>
+    <style>
+        h1{
+            background-color: black;
+            color:red;
+            font-weight: bold;
+            text-align: center;
+
+        }
+        /* div li p{
+            color:lightskyblue;
+            background-color: black;
+            font-weight: bold;
+
+        } */
+
+        /* div p{
+            color:lightskyblue;
+            background-color: black;
+            font-weight: bold;
+            
+        } */
+        
+        /* if p is right inside div then this css apply */
+        
+        /* div>p{
+            color:lightskyblue;
+            background-color: black;
+            font-weight: bold;
+
+        } */
+/* if p is right after div  or next sibling  */
+        div +p{
+            background-color:orchid;
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p> this is another paragraph inside li</p></li>
+                <p>this is another paragraph</p>
+            </ul>
+            <p>This is a pharagraph</p>
+        </div>
+        
+        <p>this is another paragraph</p>
+    </div>
+    <p>this is also a paragraph</p>
+</body>
+</html>
