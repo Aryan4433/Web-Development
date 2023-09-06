@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute and nth child pesudo</title>
+    <style>
+        .container{
+            
+            display: block;
+            width:233px;
+            margin:auto;
+        }
+        input{
+            display: block;
+
+        }
+        input[type="text"]{
+            padding:23px;
+            border:2px solid black;
+        }
+        a[target]{
+            font-size: 40px;
+            color: plum;
+        }
+        a[target="_self"]{
+            font-size: 40px;
+            color: rgb(68, 3, 68);
+        }
+        /* 3 green */
+        
+        li:nth-child(3){
+                color:springgreen;
+        }
+        /* 2n+0 hrr dusre pr red */
+        li:nth-child(2n+0){
+                color:red;
+        }
+
+        li:nth-child(2n+2){
+                color:purple;
+        }
+        /* odd child */
+        li:nth-child(odd){
+                color:pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">Go to google</a></h1>
+        <h1><a href="http://facebook.com" target="_self">Go to facebook</a></h1>
+        <form action="" class="formcontrol">
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Enter your password">
+            <input type="submit" value="submit">
+        </form>
+        <ul>
+            <li class="item" id="item1">a</li>
+            <li class="item" id="item2">b</li>
+            <li class="item" id="item3">c</li>
+            <li class="item" id="item4">d</li>
+            <li class="item" id="item5">1</li>
+            <li class="item" id="item6">2</li>
+            <li class="item" id="item7">3</li>
+            <li class="item" id="item8">4</li>
+        </ul>
+    </div>
+    <h1>yup</h1>
+</body>
+</html>
