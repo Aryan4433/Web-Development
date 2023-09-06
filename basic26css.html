@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pseudo selector</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+           
+            background-size: 100%;
+            background-color: black;
+            color:white;
+            
+            
+            
+        }
+        header::before{
+            content:"";
+            background-image: url('c.jpg');
+            position:absolute;
+            width:100%;
+            height:100%;
+            z-index: -1;
+            opacity: 0.4;
+            
+        }
+        .navigation{
+            display: flex;
+            font-size: 20px;
+            font-family: cursive;
+        }
+        li{
+            list-style: none;
+            padding: 34px 34px;
+        }
+        section{
+            color:white;
+            font-family: cursive;
+            font-weight: bold;
+            height:344px;
+            margin:4px 20px;
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            padding: 34px 34px;
+            justify-content: center;
+        }
+        section h1{
+            font-size:40px;
+        }
+        p{
+            color:white;
+            text-align: center;
+            font-weight: bold;
+        }
+        /* section::before{
+            content:"This is a extra before content"
+        }
+        section::after{
+            content:"This is a extra after content"
+        } */
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact us</li>
+            </ul>
+        </nav>
+    </header>
+        <section>
+            <h1>Welcome to our World</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate recusandae eveniet nobis a. Nesciunt, adipisci doloribus magnam at incidunt animi eum saepe quibusdam ipsa dolorum rem veniam voluptates cumque reprehenderit.</p>
+        </section>
+        
+</body>
+</html>
