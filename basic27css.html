@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        .container{
+            display:flex;
+        }
+        .card{
+            padding:23px 23px;
+            margin:23px 20px;
+            /* border:4px solid lightskyblue; */
+            background-color: rgb(230, 71, 71);
+            /* box-shadow: -4px -4px lightblue; */
+            /* box-shadow: 8px 8px 5px lightskyblue; box shadow */
+            /* box-shadow: 8px 8px 5px lightskyblue; /*blur radius */
+            /* box-shadow: 8px 8px 5px 34px  lightskyblue; blur radius */
+
+            /* box-shadow: inset 3px 5px blue; */
+            box-shadow: inset 3px 5px, inset 3px 5px yellow;
+        }
+        .card h2{
+            text-shadow: 1px 1px 2px lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>
+                CARD 1
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dignissimos vitae deserunt animi minima tenetur necessitatibus minus? Non similique consequatur omnis, eius, nihil id reiciendis exercitationem asperiores provident beatae hic debitis! Eius, nam saepe.</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>
+                CARD 2
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dignissimos vitae deserunt animi minima tenetur necessitatibus minus? Non similique consequatur omnis, eius, nihil id reiciendis exercitationem asperiores provident beatae hic debitis! Eius, nam saepe.</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>
+                CARD 3
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dignissimos vitae deserunt animi minima tenetur necessitatibus minus? Non similique consequatur omnis, eius, nihil id reiciendis exercitationem asperiores provident beatae hic debitis! Eius, nam saepe.</p>
+        </div>
+    </div>
+</body>
+</html>
