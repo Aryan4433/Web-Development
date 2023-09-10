@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css variable custom properties</title>
+    <style>
+        :root{
+            --box-color:pink;
+            --border-color:red;
+            --maxw:720px;
+        }
+        .box{
+            /* --box-color:pink; */
+            width:200px;
+            height:200px;
+            background-color: var(--box-color);
+            border:3px solid var(--border-color);
+            box-shadow: 4px 4px 4px var(--box-color);
+            margin:2px 8px;
+        }
+        .container{
+            /* --box-color:lightskyblue; */
+            max-width: var(--maxw);
+            margin:auto;
+            display:flex;
+            align-items: center;
+            justify-content:center;
+            background-color: var(--box-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        
+    </div>
+</body>
+</html>
