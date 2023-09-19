@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid media queries</title>
+    <style>
+        .container{
+            display:grid;
+            grid-gap:1rem;
+            grid-template-areas:  
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer';
+        }
+
+
+
+
+
+        @media only screen and (max-width:300px){
+        body{
+       
+        background-color: red;
+        }
+        .container{
+            grid-template-areas:  
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer';
+        }
+        aside{
+            display:none;
+        }
+
+
+        }
+        @media only screen and (min-width: 300px) and (max-width: 500px){
+        body{
+        display: block;
+        background-color: blue;
+        }
+        .container{
+            grid-template-areas:  
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer';
+        }
+
+
+        }
+
+        @media (min-width: 580px) and (max-width:800px)
+        {
+        body{
+        display: block;
+        color: black;
+        background-color: yellow;
+        }
+        .container{
+            grid-template-areas:  
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer';
+        }
+        span{
+            display:block;
+            text-align: center;
+        }
+
+
+        }
+        @media (min-width: 800px) 
+        {
+        body{
+        display: block;
+
+        background-color: green;
+        }
+        .container{
+           
+            grid-template-areas:  
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+        }
+
+
+    }
+    .bdr{
+    border: 2px solid black;
+    padding: 23px;
+    background-color: wheat;
+    }
+    nav{
+        grid-area: navbar;
+    }
+    section{
+        grid-area: section;
+    }
+    aside{
+        grid-area: aside;
+    }
+    footer{
+        grid-area: footer;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>About</span>
+            <span>Services</span>
+            <span>Contact</span>
+        </nav> 
+
+        <section class="bdr">
+        <h2>Learn CSS in hindi 
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi dolorum quisquam inventore odio distinctio possimus? Mollitia earum reprehenderit, fugiat quo repudiandae quaerat praesentium. Velit corrupti, minus non ullam eligendi quod adipisci iure molestias, nobis nihil optio pariatur, in maiores fuga quasi facilis. Ipsam laudantium aperiam, laboriosam expedita quidem magnam? Consequuntur corporis perspiciatis corrupti in rerum libero ipsa ut obcaecati natus illum maxime quidem facilis nostrum quo consectetur est, ipsam aliquam quasi hic nemo delectus inventore eligendi exercitationem? Quidem nulla perferendis suscipit architecto alias nam perspiciatis illum pariatur repellendus accusantium, repellat rem voluptas odit veniam officiis, officia doloribus soluta possimus molestias culpa quos exercitationem. Quidem earum consequuntur rerum accusantium sapiente libero quia placeat illo similique, molestiae doloribus. Quo minus, natus eos saepe ullam voluptates quis dolores labore, numquam nulla odit consequuntur animi dicta veritatis, accusantium error pariatur explicabo accusamus totam modi placeat at necessitatibus. Deserunt autem placeat voluptates facilis incidunt? Quidem necessitatibus odio aperiam cum porro numquam. Dolores aspernatur sed sunt consectetur et quod mollitia fugit perferendis iusto nesciunt similique quia deleniti magni porro ipsam harum voluptates nam, cumque labore veniam ex temporibus. Repellat blanditiis voluptate aliquam sit consequatur sunt? Laudantium nesciunt hic, omnis repellat quas corrupti necessitatibus! Eligendi quas est voluptatibus consequuntur cupiditate eveniet officia odio repellat, rem maxime expedita possimus corporis aperiam quasi vero eius, minus ullam laborum ipsam hic? Officia modi, cumque commodi quae enim natus itaque minima quasi autem ut reprehenderit optio blanditiis nihil minus deserunt harum asperiores hic ipsa sunt assumenda laudantium? Harum perferendis tempora, vero doloribus eveniet explicabo inventore, praesentium quis aliquid laudantium sed, ipsum architecto commodi! Saepe molestias consectetur ea facere eum aliquid sed officiis harum fuga veniam iure enim, a unde aspernatur cumque. Fugiat ad, repellat delectus, minus minima, voluptate adipisci ut nesciunt eius quo dolores facere atque quia? Eum, molestiae. Soluta esse blanditiis veniam molestiae suscipit ipsum numquam fugiat minima, illum exercitationem magni ut cum iste laudantium, sunt assumenda hic, labore eveniet voluptatem quam iure beatae ullam? Doloribus voluptate quod sint minima eligendi, eaque optio vitae cumque hic, corrupti asperiores cupiditate, repellendus dolor commodi tempore in ullam est maiores vel necessitatibus itaque perspiciatis. Dolore obcaecati numquam tempore earum nemo animi facere sed recusandae. Ex dolorum nihil natus porro velit earum, assumenda sit vero delectus maxime deleniti at perferendis quaerat animi mollitia. Repellat eveniet quod doloremque nesciunt magni, ab qui laboriosam asperiores perferendis nam eaque. Repellat aut, mollitia neque optio obcaecati est ipsum!
+        </h2>
+        </section>
+
+        <aside class="bdr">
+        <h1 >More about us</h1>
+        </aside>
+
+        </div>
+        <footer class="bdr">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, repudiandae!</footer>
+</body>
+</html>
