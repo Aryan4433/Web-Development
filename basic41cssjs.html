@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings functions</title>
+</head>
+<body>
+    <div class="container">
+
+    </div>
+
+    <script>
+        var str="This is a string";
+        console.log(str);
+
+        // First occurence of a substring
+        var position = str.indexOf('is');
+        console.log(position);
+        // Last  occurence of a substring
+        position = str.lastIndexOf('is');
+        console.log(position);
+
+        //substring from a string
+        // var substr=str.slice(1,9);
+        var substr=str.substring(1,9);
+        console.log(substr)
+
+        //replaced
+        var replaced= str.replace('string','TOY');
+        console.log(str);
+        console.log(replaced)
+
+        //uppercase...
+        console.log(str.toUpperCase());
+
+        //lowercase...
+        console.log(str.toLowerCase());
+
+        //concat
+        var newstring = str.concat(' new string')
+        console.log(newstring)
+
+        //spaces
+        var  strWithWhiteSpaces = "         this containe          white     spaces    ";
+        console.log(strWithWhiteSpaces)
+
+        //trim remove spaces from start and end...
+        console.log(strWithWhiteSpaces.trim())
+
+        //finding element from position...
+        var char1= str.charAt(3)
+        console.log(char1)
+
+        //charCodeAT give code of character
+        var char1= str.charCodeAt(3)
+        console.log(char1)
+
+        console.log(str[3])
+    </script>
+</body>
+</html>
