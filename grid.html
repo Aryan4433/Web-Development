@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+    <style>
+        body{
+            width:75%;
+            height:100%;
+            margin:20px auto;
+            border:1px solid black;
+        }
+        .container{
+            display:grid;
+            grid-template-rows:60px 150px 400px 60px;
+            grid-template-columns: repeat(3,1fr)150px;
+        }
+        .box{
+            border:2px solid black;
+            margin:4px
+        }
+        #box1{
+            background-color: rgb(243, 23, 23);
+            grid-column: 1/5;
+        }
+        #box2{
+            background-color: lightskyblue;
+        }
+        #box3{
+            background-color: rgb(244, 244, 67);
+        }
+        #box4{
+            background-color: rgb(11, 247, 11);
+
+        }
+        #box5{
+            background-color: rgb(190, 77, 247);
+            grid-row: 2/4;grid-column: 4/5;
+        }
+        #box6{
+            background-color: rgb(246, 187, 79);
+            grid-column: 1/4;
+
+        }
+        #box7{
+            background-color: rgb(252, 169, 183);
+            grid-column: 1/5;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div id="box1" class="box">This is: Header</div>
+        <div id="box2" class="box">This is: box1</div>
+        <div id="box3" class="box">This is: box2</div>
+        <div id="box4" class="box">This is: box3</div>
+        <div id="box5" class="box">This is: content</div>
+        <div id="box6" class="box">This is: scrollbar</div>
+        <div id="box7" class="box">This is: footer</div>
+    </div>
+
+</body>
+</html>
