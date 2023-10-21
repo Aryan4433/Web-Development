@@ -1,0 +1,222 @@
+*{
+    padding:0;
+    margin:0;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+}
+#navbar::before{
+    content: "";
+    background-color: rgb(53, 229, 242);
+    position: absolute;
+    height:10%;
+    width:100%;
+    z-index: -1;
+    opacity: 1;
+}
+#im{
+    height: 60px;
+    width:60px;
+    margin:0px 34px;
+}
+.item{
+    text-decoration: none;
+    list-style-type: none;
+    padding:25px;
+    color:white;
+}
+#navbar ul li input {
+    border-radius: 5px;
+    color:black;
+    
+}
+ul{
+    color:white;
+    display: flex;
+}
+a{
+    color:white;
+    font-family: cursive;
+    list-style-type: none;
+    text-decoration: none;
+}
+a:hover{
+    color:black;
+}
+
+
+
+/*  */
+
+#home{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:14px 200px;
+    height:500px;
+}
+#home::before{
+    content:" ";
+    position: absolute;
+    background: url('tra.webp') no-repeat center center/cover;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    opacity: 1.0;
+
+}
+#home h1{
+    color:white;
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Aboreto', 'cursive';
+
+}
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Aboreto', 'cursive';
+}
+.line{
+    height:1%;
+}
+.btn{
+    border:2px solid rgb(53, 229, 242);
+    padding:12px 34px;
+    margin:24px;
+    border-radius:2px 14px 2px 14px;
+    background-color:rgb(186, 240, 244);
+    font-size:20px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: black;
+    color:lightskyblue;
+}
+
+
+/*  */
+.pri{
+    position: relative;
+    top:120px;
+    padding:12px;
+    text-align: center;
+    font-size: 40px;
+}
+#service{
+    display:flex;
+    margin:40px;
+}
+#service .box{
+    background-color: lightskyblue;
+    position: relative;
+    top:100px;
+    margin:28px;
+    text-align: center;
+    width:500px;
+    border-radius: 2px 20px 2px 20px;
+    border:5px solid rgb(0, 0, 0);
+
+}
+#services .box img{
+    margin:auto;
+    display:block;
+    height:160px;
+
+}
+#services::before{
+    content:"";
+    position: absolute;
+    background: url('mountains-1899264_1920.jpg');
+    width:100%;
+    height:650px;
+    margin:100px 0px;
+    z-index: -1;
+    opacity: 2;
+
+}
+#service .box p{
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+
+}
+/*  */
+
+#earth{
+    display:flex;
+    text-align: right;
+    position:relative;
+    top:200px;
+}
+#travel::before{
+    content:"";
+    position: absolute;
+    background: url('sea-1027999_1920.jpg')no-repeat center center/cover;
+    width:100%;
+    height:650px;
+    margin:100px 0px;
+    z-index: -1;
+    opacity: 2;
+}
+.bo{
+    position: relative;
+    top:90px;
+    margin:0px 28px;
+}
+.bo p{
+    color:black;
+    font-size: 25px;
+    
+}
+.tri{
+    padding:2px;
+    text-align: right;
+    font-size: 65px;
+}
+
+/*  */
+footer{
+    
+    text-align: center;
+    position: relative;
+    top: 300px;
+    background-color: black;
+    color: white;
+    padding:9px 20px;
+}
+.left ul{
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+.left ul li img{
+    padding:0px 100px;
+    height:40px;
+}
+
+/*  */
+.primary{
+    font-size: 3.8 rem;
+    color:black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
